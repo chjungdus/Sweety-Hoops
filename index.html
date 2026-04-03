@@ -3,17 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sweety Hoops – Handgemachte Ohrringe</title>
-  <meta name="description" content="Elegante, handgemachte Ohrringe. Jedes Stück ein Unikat." />
+  <title>Sweety Hoops – Charm Ohrringe</title>
+  <meta name="description" content="Bunte Charm-Ohrringe – Gummibärchen, Eis, Schmetterlinge & mehr. Ab 3 €!" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet" />
 
-  <!-- Snipcart CSS -->
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.3/default/snipcart.css" />
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -21,294 +18,429 @@
   <!-- ── HEADER ── -->
   <header class="site-header">
     <nav class="nav">
-      <a href="#shop" class="nav-link">Shop</a>
       <a href="/" class="nav-logo">Sweety Hoops</a>
-      <button class="snipcart-checkout nav-cart" aria-label="Warenkorb öffnen">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-        <span class="snipcart-items-count"></span>
+
+      <ul class="nav-links">
+        <!-- Kollektionen Dropdown -->
+        <li class="nav-item nav-item--dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false">
+            Kollektionen ▾
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#cat-gummibärchen" class="dropdown-item">
+              <span class="cat-dot cat-dot--gummy"></span> Gummibärchen
+            </a></li>
+            <li><a href="#cat-eis" class="dropdown-item">
+              <span class="cat-dot cat-dot--eis"></span> Eis
+            </a></li>
+            <li><a href="#cat-insekten" class="dropdown-item">
+              <span class="cat-dot cat-dot--insekten"></span> Insekten
+            </a></li>
+            <li><a href="#cat-meerestiere" class="dropdown-item">
+              <span class="cat-dot cat-dot--meer"></span> Meerestiere
+            </a></li>
+            <li><a href="#cat-drinks" class="dropdown-item">
+              <span class="cat-dot cat-dot--drinks"></span> Drinks
+            </a></li>
+            <li><a href="#cat-suesses" class="dropdown-item">
+              <span class="cat-dot cat-dot--suess"></span> Süßes
+            </a></li>
+            <li><a href="#cat-blitze" class="dropdown-item">
+              <span class="cat-dot cat-dot--blitz"></span> Blitze
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="ueber-uns.html" class="nav-link">Über uns</a>
+        </li>
+      </ul>
+
+      <button class="snipcart-checkout nav-cart" aria-label="Warenkorb">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-badge snipcart-items-count"></span>
       </button>
     </nav>
   </header>
 
-  <!-- ── HERO ── -->
-  <section class="hero">
-    <div class="hero-content">
-      <p class="hero-eyebrow">Handgemacht mit Liebe</p>
-      <h1 class="hero-title">Ohrringe,<br /><em>die erzählen.</em></h1>
-      <p class="hero-subtitle">Jedes Stück ein Unikat — gefertigt in kleiner Auflage.</p>
-      <a href="#shop" class="btn btn-primary">Kollektion entdecken</a>
-    </div>
-    <div class="hero-decoration">
-      <div class="hero-circle hero-circle--lg"></div>
-      <div class="hero-circle hero-circle--sm"></div>
+  <!-- ── BANNER (kompakt) ── -->
+  <section class="banner">
+    <div class="banner-inner">
+      <p class="banner-tag">Neu im Shop</p>
+      <h1 class="banner-title">Ohrringe für jeden Vibe ✨</h1>
+      <p class="banner-sub">Ab <strong>3 €</strong> · Versand in 1–3 Tagen</p>
     </div>
   </section>
 
-  <!-- ── WERTE ── -->
-  <section class="values">
+  <!-- ── KATEGORIE-FILTER ── -->
+  <section class="filter-bar">
     <div class="container">
-      <div class="values-grid">
-        <div class="value-item">
-          <span class="value-icon">◇</span>
-          <h3>Handgefertigt</h3>
-          <p>Jedes Stück entsteht mit viel Sorgfalt und Liebe zum Detail.</p>
-        </div>
-        <div class="value-item">
-          <span class="value-icon">◇</span>
-          <h3>Kleine Auflagen</h3>
-          <p>Begrenzte Stückzahlen — für etwas wirklich Besonderes.</p>
-        </div>
-        <div class="value-item">
-          <span class="value-icon">◇</span>
-          <h3>Hochwertig</h3>
-          <p>Ausgesuchte Materialien für langjährige Freude.</p>
-        </div>
+      <div class="filter-pills">
+        <button class="pill pill--active" data-filter="all">Alle</button>
+        <button class="pill" data-filter="gummibärchen">Gummibärchen</button>
+        <button class="pill" data-filter="eis">Eis</button>
+        <button class="pill" data-filter="insekten">Insekten</button>
+        <button class="pill" data-filter="meerestiere">Meerestiere</button>
+        <button class="pill" data-filter="drinks">Drinks</button>
+        <button class="pill" data-filter="suesses">Süßes</button>
+        <button class="pill" data-filter="blitze">Blitze</button>
       </div>
     </div>
   </section>
 
   <!-- ── SHOP ── -->
-  <section id="shop" class="shop">
+  <main id="shop" class="shop">
     <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">Aktuelle Kollektion</p>
-        <h2 class="section-title">Unsere Ohrringe</h2>
-      </div>
-
       <div class="product-grid">
 
-        <!-- Produkt 1 -->
-        <article class="product-card">
-          <div class="product-image-wrap">
-            <div class="product-image product-image--placeholder">
-              <span class="placeholder-icon">◎</span>
-            </div>
-            <span class="product-badge">Neu</span>
+        <!-- GUMMIBÄRCHEN – plastic €3 -->
+        <article class="product-card" data-category="gummibärchen" id="cat-gummibärchen">
+          <div class="product-image-wrap" style="--card-color: #ffe0ec;">
+            <img src="images/gummibärchen.jpg" alt="Gummibärchen Ohrringe"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="product-placeholder">🐻</div>
+            <span class="product-badge badge--plastic">Plastik</span>
           </div>
           <div class="product-info">
-            <h3 class="product-name">Golden Hoops Classic</h3>
-            <p class="product-desc">Zeitlose Creolen in warmem Gold, leicht und tragkomfortabel.</p>
+            <h3 class="product-name">Gummibärchen</h3>
+            <p class="product-desc">Bunte Gummibärchen als Hänger — zu süß!</p>
             <div class="product-footer">
-              <span class="product-price">18,00 €</span>
-              <button
-                class="snipcart-add-item btn btn-add"
-                data-item-id="golden-hoops-classic"
-                data-item-name="Golden Hoops Classic"
-                data-item-price="18.00"
+              <span class="product-price">3,00 €</span>
+              <button class="snipcart-add-item btn-add"
+                data-item-id="gummibärchen-ohrringe"
+                data-item-name="Gummibärchen Ohrringe"
+                data-item-price="3.00"
                 data-item-url="https://mateo-pixel-source.github.io/sweety-hoops/"
-                data-item-description="Zeitlose Creolen in warmem Gold, leicht und tragkomfortabel."
-                data-item-image="https://mateo-pixel-source.github.io/sweety-hoops/images/golden-hoops-classic.jpg"
-                data-item-max-quantity="10"
-              >
-                In den Warenkorb
-              </button>
+                data-item-description="Bunte Gummibärchen als Hänger"
+                data-item-image="https://mateo-pixel-source.github.io/sweety-hoops/images/gummibärchen.jpg"
+                data-item-max-quantity="20">In den Korb</button>
             </div>
           </div>
         </article>
 
-        <!-- Produkt 2 -->
-        <article class="product-card">
-          <div class="product-image-wrap">
-            <div class="product-image product-image--placeholder">
-              <span class="placeholder-icon">◉</span>
-            </div>
+        <!-- EIS – plastic €3 -->
+        <article class="product-card" data-category="eis" id="cat-eis">
+          <div class="product-image-wrap" style="--card-color: #d0f0ff;">
+            <img src="images/eis.jpg" alt="Eis am Stiel Ohrringe"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="product-placeholder">🍦</div>
+            <span class="product-badge badge--plastic">Plastik</span>
           </div>
           <div class="product-info">
-            <h3 class="product-name">Pearl Drop Studs</h3>
-            <p class="product-desc">Zarte Ohrstecker mit echten Süßwasserperlen.</p>
+            <h3 class="product-name">Eis am Stiel</h3>
+            <p class="product-desc">Regenbogen-Popsicles für heiße Tage.</p>
             <div class="product-footer">
-              <span class="product-price">24,00 €</span>
-              <button
-                class="snipcart-add-item btn btn-add"
-                data-item-id="pearl-drop-studs"
-                data-item-name="Pearl Drop Studs"
-                data-item-price="24.00"
+              <span class="product-price">3,00 €</span>
+              <button class="snipcart-add-item btn-add"
+                data-item-id="eis-ohrringe"
+                data-item-name="Eis am Stiel Ohrringe"
+                data-item-price="3.00"
                 data-item-url="https://mateo-pixel-source.github.io/sweety-hoops/"
-                data-item-description="Zarte Ohrstecker mit echten Süßwasserperlen."
-                data-item-image="https://mateo-pixel-source.github.io/sweety-hoops/images/pearl-drop-studs.jpg"
-                data-item-max-quantity="8"
-              >
-                In den Warenkorb
-              </button>
+                data-item-description="Regenbogen-Popsicle Hänger"
+                data-item-image="https://mateo-pixel-source.github.io/sweety-hoops/images/eis.jpg"
+                data-item-max-quantity="20">In den Korb</button>
             </div>
           </div>
         </article>
 
-        <!-- Produkt 3 -->
-        <article class="product-card">
-          <div class="product-image-wrap">
-            <div class="product-image product-image--placeholder">
-              <span class="placeholder-icon">◈</span>
-            </div>
-            <span class="product-badge product-badge--sold">Fast weg</span>
+        <!-- SCHMETTERLING – metal €4 -->
+        <article class="product-card" data-category="insekten" id="cat-insekten">
+          <div class="product-image-wrap" style="--card-color: #e8d5ff;">
+            <img src="images/schmetterlinge.jpg" alt="Schmetterling Ohrringe"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="product-placeholder">🦋</div>
+            <span class="product-badge badge--metal">Metall</span>
           </div>
           <div class="product-info">
-            <h3 class="product-name">Boho Feather Drops</h3>
-            <p class="product-desc">Leichte Hänger mit feinem Federmuster — für den besonderen Abend.</p>
+            <h3 class="product-name">Schmetterlinge</h3>
+            <p class="product-desc">Farbige Emaille-Schmetterlinge, goldener Rahmen.</p>
             <div class="product-footer">
-              <span class="product-price">22,00 €</span>
-              <button
-                class="snipcart-add-item btn btn-add"
-                data-item-id="boho-feather-drops"
-                data-item-name="Boho Feather Drops"
-                data-item-price="22.00"
+              <span class="product-price">4,00 €</span>
+              <button class="snipcart-add-item btn-add"
+                data-item-id="schmetterling-ohrringe"
+                data-item-name="Schmetterling Ohrringe"
+                data-item-price="4.00"
                 data-item-url="https://mateo-pixel-source.github.io/sweety-hoops/"
-                data-item-description="Leichte Hänger mit feinem Federmuster — für den besonderen Abend."
-                data-item-image="https://mateo-pixel-source.github.io/sweety-hoops/images/boho-feather-drops.jpg"
-                data-item-max-quantity="3"
-              >
-                In den Warenkorb
-              </button>
+                data-item-description="Farbige Emaille-Schmetterlinge"
+                data-item-image="https://mateo-pixel-source.github.io/sweety-hoops/images/schmetterlinge.jpg"
+                data-item-max-quantity="15">In den Korb</button>
             </div>
           </div>
         </article>
 
-        <!-- Produkt 4 -->
-        <article class="product-card">
-          <div class="product-image-wrap">
-            <div class="product-image product-image--placeholder">
-              <span class="placeholder-icon">◍</span>
-            </div>
+        <!-- BIENE – metal €4 -->
+        <article class="product-card" data-category="insekten">
+          <div class="product-image-wrap" style="--card-color: #fff3c0;">
+            <img src="images/bienen.jpg" alt="Bienen Ohrringe"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="product-placeholder">🐝</div>
+            <span class="product-badge badge--metal">Metall</span>
           </div>
           <div class="product-info">
-            <h3 class="product-name">Minimal Arc Silver</h3>
-            <p class="product-desc">Schlichte Halbkreis-Creolen in Silber — moderner Minimalismus.</p>
+            <h3 class="product-name">Bienen</h3>
+            <p class="product-desc">Goldene Emaille-Bienen — fleißig & süß.</p>
             <div class="product-footer">
-              <span class="product-price">16,00 €</span>
-              <button
-                class="snipcart-add-item btn btn-add"
-                data-item-id="minimal-arc-silver"
-                data-item-name="Minimal Arc Silver"
-                data-item-price="16.00"
+              <span class="product-price">4,00 €</span>
+              <button class="snipcart-add-item btn-add"
+                data-item-id="bienen-ohrringe"
+                data-item-name="Bienen Ohrringe"
+                data-item-price="4.00"
                 data-item-url="https://mateo-pixel-source.github.io/sweety-hoops/"
-                data-item-description="Schlichte Halbkreis-Creolen in Silber — moderner Minimalismus."
-                data-item-image="https://mateo-pixel-source.github.io/sweety-hoops/images/minimal-arc-silver.jpg"
-                data-item-max-quantity="12"
-              >
-                In den Warenkorb
-              </button>
+                data-item-description="Goldene Emaille-Bienen"
+                data-item-image="https://mateo-pixel-source.github.io/sweety-hoops/images/bienen.jpg"
+                data-item-max-quantity="15">In den Korb</button>
             </div>
           </div>
         </article>
 
-        <!-- Produkt 5 -->
-        <article class="product-card">
-          <div class="product-image-wrap">
-            <div class="product-image product-image--placeholder">
-              <span class="placeholder-icon">◌</span>
-            </div>
-            <span class="product-badge">Neu</span>
+        <!-- MEERJUNGFRAU – metal €4 -->
+        <article class="product-card" data-category="meerestiere" id="cat-meerestiere">
+          <div class="product-image-wrap" style="--card-color: #c8f5e8;">
+            <img src="images/meerjungfrau.jpg" alt="Meerjungfrau Ohrringe"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="product-placeholder">🧜</div>
+            <span class="product-badge badge--metal">Metall</span>
           </div>
           <div class="product-info">
-            <h3 class="product-name">Flower Chain Studs</h3>
-            <p class="product-desc">Blütenförmige Ohrstecker mit zartem Kettchen — verspielt und elegant.</p>
+            <h3 class="product-name">Meerjungfrauen</h3>
+            <p class="product-desc">Glitzernde Meerjungfrauen in vielen Farben.</p>
             <div class="product-footer">
-              <span class="product-price">20,00 €</span>
-              <button
-                class="snipcart-add-item btn btn-add"
-                data-item-id="flower-chain-studs"
-                data-item-name="Flower Chain Studs"
-                data-item-price="20.00"
+              <span class="product-price">4,00 €</span>
+              <button class="snipcart-add-item btn-add"
+                data-item-id="meerjungfrau-ohrringe"
+                data-item-name="Meerjungfrau Ohrringe"
+                data-item-price="4.00"
                 data-item-url="https://mateo-pixel-source.github.io/sweety-hoops/"
-                data-item-description="Blütenförmige Ohrstecker mit zartem Kettchen — verspielt und elegant."
-                data-item-image="https://mateo-pixel-source.github.io/sweety-hoops/images/flower-chain-studs.jpg"
-                data-item-max-quantity="6"
-              >
-                In den Warenkorb
-              </button>
+                data-item-description="Glitzernde Meerjungfrau-Charms"
+                data-item-image="https://mateo-pixel-source.github.io/sweety-hoops/images/meerjungfrau.jpg"
+                data-item-max-quantity="12">In den Korb</button>
             </div>
           </div>
         </article>
 
-        <!-- Produkt 6 -->
-        <article class="product-card">
-          <div class="product-image-wrap">
-            <div class="product-image product-image--placeholder">
-              <span class="placeholder-icon">◐</span>
-            </div>
+        <!-- FISCHSCHWANZ – metal €4 -->
+        <article class="product-card" data-category="meerestiere">
+          <div class="product-image-wrap" style="--card-color: #b8eeff;">
+            <img src="images/fischschwanz.jpg" alt="Fischschwanz Ohrringe"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="product-placeholder">🐠</div>
+            <span class="product-badge badge--metal">Metall</span>
           </div>
           <div class="product-info">
-            <h3 class="product-name">Twisted Gold Huggies</h3>
-            <p class="product-desc">Kleine Creolen mit gedrehtem Design — perfekt für den Alltag.</p>
+            <h3 class="product-name">Fischschwanz</h3>
+            <p class="product-desc">Schimmernde Meerjungfrauen-Schwänze.</p>
             <div class="product-footer">
-              <span class="product-price">19,00 €</span>
-              <button
-                class="snipcart-add-item btn btn-add"
-                data-item-id="twisted-gold-huggies"
-                data-item-name="Twisted Gold Huggies"
-                data-item-price="19.00"
+              <span class="product-price">4,00 €</span>
+              <button class="snipcart-add-item btn-add"
+                data-item-id="fischschwanz-ohrringe"
+                data-item-name="Fischschwanz Ohrringe"
+                data-item-price="4.00"
                 data-item-url="https://mateo-pixel-source.github.io/sweety-hoops/"
-                data-item-description="Kleine Creolen mit gedrehtem Design — perfekt für den Alltag."
-                data-item-image="https://mateo-pixel-source.github.io/sweety-hoops/images/twisted-gold-huggies.jpg"
-                data-item-max-quantity="15"
-              >
-                In den Warenkorb
-              </button>
+                data-item-description="Schimmernde Meerjungfrauen-Schwänze"
+                data-item-image="https://mateo-pixel-source.github.io/sweety-hoops/images/fischschwanz.jpg"
+                data-item-max-quantity="12">In den Korb</button>
             </div>
           </div>
         </article>
 
-      </div>
+        <!-- MUSCHELN – metal €4 -->
+        <article class="product-card" data-category="meerestiere">
+          <div class="product-image-wrap" style="--card-color: #ffecd0;">
+            <img src="images/muscheln.jpg" alt="Muschel Ohrringe"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="product-placeholder">🐚</div>
+            <span class="product-badge badge--metal">Metall</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Muscheln</h3>
+            <p class="product-desc">Zarte Muscheln mit Perle — Beach-Vibes pur.</p>
+            <div class="product-footer">
+              <span class="product-price">4,00 €</span>
+              <button class="snipcart-add-item btn-add"
+                data-item-id="muschel-ohrringe"
+                data-item-name="Muschel Ohrringe"
+                data-item-price="4.00"
+                data-item-url="https://mateo-pixel-source.github.io/sweety-hoops/"
+                data-item-description="Zarte Muscheln mit Perle"
+                data-item-image="https://mateo-pixel-source.github.io/sweety-hoops/images/muscheln.jpg"
+                data-item-max-quantity="12">In den Korb</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- BOBA TEA – plastic €3 -->
+        <article class="product-card" data-category="drinks" id="cat-drinks">
+          <div class="product-image-wrap" style="--card-color: #ffd6e7;">
+            <img src="images/boba.jpg" alt="Boba Tea Ohrringe"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="product-placeholder">🧋</div>
+            <span class="product-badge badge--plastic">Plastik</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Boba Tea</h3>
+            <p class="product-desc">Miniatur Bubble-Tea in vielen Farben.</p>
+            <div class="product-footer">
+              <span class="product-price">3,00 €</span>
+              <button class="snipcart-add-item btn-add"
+                data-item-id="boba-ohrringe"
+                data-item-name="Boba Tea Ohrringe"
+                data-item-price="3.00"
+                data-item-url="https://mateo-pixel-source.github.io/sweety-hoops/"
+                data-item-description="Miniatur Bubble-Tea Hänger"
+                data-item-image="https://mateo-pixel-source.github.io/sweety-hoops/images/boba.jpg"
+                data-item-max-quantity="20">In den Korb</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- COCKTAILS/DRINKS – plastic €3 -->
+        <article class="product-card" data-category="drinks">
+          <div class="product-image-wrap" style="--card-color: #ffe4c8;">
+            <img src="images/cocktails.jpg" alt="Cocktail Ohrringe"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="product-placeholder">🍹</div>
+            <span class="product-badge badge--plastic">Plastik</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Cocktails</h3>
+            <p class="product-desc">Bunte Mini-Cocktailgläser als Hänger.</p>
+            <div class="product-footer">
+              <span class="product-price">3,00 €</span>
+              <button class="snipcart-add-item btn-add"
+                data-item-id="cocktail-ohrringe"
+                data-item-name="Cocktail Ohrringe"
+                data-item-price="3.00"
+                data-item-url="https://mateo-pixel-source.github.io/sweety-hoops/"
+                data-item-description="Bunte Mini-Cocktailgläser"
+                data-item-image="https://mateo-pixel-source.github.io/sweety-hoops/images/cocktails.jpg"
+                data-item-max-quantity="20">In den Korb</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- SÜSSIGKEITEN – plastic €3 -->
+        <article class="product-card" data-category="suesses" id="cat-suesses">
+          <div class="product-image-wrap" style="--card-color: #ffd6f0;">
+            <img src="images/süssigkeiten.jpg" alt="Süßigkeiten Ohrringe"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="product-placeholder">🍬</div>
+            <span class="product-badge badge--plastic">Plastik</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Süßigkeiten</h3>
+            <p class="product-desc">Bunte Bonbons & Candies — total cute!</p>
+            <div class="product-footer">
+              <span class="product-price">3,00 €</span>
+              <button class="snipcart-add-item btn-add"
+                data-item-id="süssigkeiten-ohrringe"
+                data-item-name="Süßigkeiten Ohrringe"
+                data-item-price="3.00"
+                data-item-url="https://mateo-pixel-source.github.io/sweety-hoops/"
+                data-item-description="Bunte Bonbon-Charms"
+                data-item-image="https://mateo-pixel-source.github.io/sweety-hoops/images/süssigkeiten.jpg"
+                data-item-max-quantity="20">In den Korb</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- BLITZE – metal €4 -->
+        <article class="product-card" data-category="blitze" id="cat-blitze">
+          <div class="product-image-wrap" style="--card-color: #fff0b0;">
+            <img src="images/blitze.jpg" alt="Blitz Ohrringe"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="product-placeholder">⚡</div>
+            <span class="product-badge badge--metal">Metall</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Blitze</h3>
+            <p class="product-desc">Regenbogen-Emaille-Blitze — für Power-Girls!</p>
+            <div class="product-footer">
+              <span class="product-price">4,00 €</span>
+              <button class="snipcart-add-item btn-add"
+                data-item-id="blitz-ohrringe"
+                data-item-name="Blitz Ohrringe"
+                data-item-price="4.00"
+                data-item-url="https://mateo-pixel-source.github.io/sweety-hoops/"
+                data-item-description="Regenbogen-Emaille-Blitze"
+                data-item-image="https://mateo-pixel-source.github.io/sweety-hoops/images/blitze.jpg"
+                data-item-max-quantity="15">In den Korb</button>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /product-grid -->
     </div>
-  </section>
-
-  <!-- ── ÜBER UNS ── -->
-  <section class="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-image-wrap">
-          <div class="about-image-placeholder">
-            <span>Foto</span>
-          </div>
-        </div>
-        <div class="about-text">
-          <p class="section-eyebrow">Die Geschichte</p>
-          <h2 class="section-title">Mit Liebe gemacht</h2>
-          <p>Sweety Hoops entstand aus der Leidenschaft für schönen Schmuck und dem Wunsch, etwas mit den eigenen Händen zu schaffen. Jeder Ohrring wird sorgfältig gefertigt — kein Stück gleicht dem anderen.</p>
-          <p>Kleine Auflagen, ehrliche Materialien, echte Handarbeit. Das ist unser Versprechen.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  </main>
 
   <!-- ── FOOTER ── -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <p class="footer-logo">Sweety Hoops</p>
-          <p class="footer-tagline">Handgemachte Ohrringe mit Seele.</p>
-        </div>
+      <div class="footer-inner">
+        <p class="footer-logo">Sweety Hoops 🌸</p>
         <div class="footer-links">
-          <h4>Info</h4>
-          <ul>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#about">Über uns</a></li>
-          </ul>
+          <a href="ueber-uns.html">Über uns</a>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+          <a href="agb.html">AGB</a>
+          <a href="mailto:hello@sweetyhoops.de">Kontakt</a>
         </div>
-        <div class="footer-links">
-          <h4>Rechtliches</h4>
-          <ul>
-            <li><a href="/impressum.html">Impressum</a></li>
-            <li><a href="/datenschutz.html">Datenschutz</a></li>
-            <li><a href="/agb.html">AGB</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <h4>Kontakt</h4>
-          <p>Bei Fragen melde dich gerne!</p>
-          <a href="mailto:hello@sweetyhoops.de" class="footer-email">hello@sweetyhoops.de</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2026 Sweety Hoops · Alle Rechte vorbehalten</p>
+        <p class="footer-copy">© 2026 Sweety Hoops</p>
       </div>
     </div>
   </footer>
 
   <!-- ── SNIPCART ── -->
-  <div hidden id="snipcart" data-api-key="OGRjOGY0Y2UtNzg5ZC00MDcxLTg5NmYtMTEwOTE1ZDk3NzA1NjM5MTAzODg3MzIyMTg0Nzc4" data-currency="eur"></div>
+  <div hidden id="snipcart"
+    data-api-key="OGRjOGY0Y2UtNzg5ZC00MDcxLTg5NmYtMTEwOTE1ZDk3NzA1NjM5MTAzODg3MzIyMTg0Nzc4"
+    data-currency="eur"></div>
   <script async src="https://cdn.snipcart.com/themes/v3.3.3/default/snipcart.js"></script>
 
+  <!-- Filter-Logik -->
+  <script>
+    const pills = document.querySelectorAll('.pill');
+    const cards = document.querySelectorAll('.product-card');
+
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        pills.forEach(p => p.classList.remove('pill--active'));
+        pill.classList.add('pill--active');
+
+        const filter = pill.dataset.filter;
+        cards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Dropdown toggle
+    const toggle = document.querySelector('.dropdown-toggle');
+    const menu = document.querySelector('.dropdown-menu');
+    toggle?.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      menu.classList.toggle('dropdown-menu--open', !open);
+    });
+    document.addEventListener('click', e => {
+      if (!e.target.closest('.nav-item--dropdown')) {
+        toggle?.setAttribute('aria-expanded', 'false');
+        menu?.classList.remove('dropdown-menu--open');
+      }
+    });
+
+    // Dropdown links → filter pills
+    document.querySelectorAll('.dropdown-item').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const href = link.getAttribute('href').replace('#cat-', '');
+        const matchPill = [...pills].find(p => p.dataset.filter === href);
+        matchPill?.click();
+        document.getElementById('shop')?.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
 </html>

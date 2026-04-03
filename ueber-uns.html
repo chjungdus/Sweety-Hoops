@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Über uns – Sweety Hoops</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.3/default/snipcart.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .about-page {
+      max-width: 680px;
+      margin: 4rem auto;
+      padding-inline: clamp(1rem, 4vw, 2.5rem);
+      text-align: center;
+    }
+    .about-page h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--pink);
+      margin-bottom: 1.5rem;
+    }
+    .about-page p {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      line-height: 1.8;
+    }
+    .about-page .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      background: var(--pink);
+      color: white;
+      border-radius: 50px;
+      padding: 0.65rem 1.75rem;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+    .about-page .back-link:hover { background: var(--pink-dark); }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="/" class="nav-logo">Sweety Hoops</a>
+      <ul class="nav-links">
+        <li><a href="/#shop" class="nav-link">Shop</a></li>
+        <li><a href="ueber-uns.html" class="nav-link">Über uns</a></li>
+      </ul>
+      <button class="snipcart-checkout nav-cart" aria-label="Warenkorb">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-badge snipcart-items-count"></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="about-page">
+    <h1>Über uns 🌸</h1>
+    <p>
+      Hey! Ich bin's — die hinter Sweety Hoops steckt.
+      Was als kleines Hobby angefangen hat, ist inzwischen mein kleiner Laden geworden.
+    </p>
+    <p>
+      Ich suche die süßesten Charms aus, stelle sie zu Ohrringen zusammen
+      und verschicke sie direkt zu euch. Jeder Ohrring wird von mir mit Liebe verpackt. 💕
+    </p>
+    <p>
+      Fragen, Wünsche oder einfach Hallo sagen?
+      Schreib mir gerne: <strong>hello@sweetyhoops.de</strong>
+    </p>
+    <a href="/" class="back-link">← Zurück zum Shop</a>
+  </div>
+
+  <div hidden id="snipcart"
+    data-api-key="OGRjOGY0Y2UtNzg5ZC00MDcxLTg5NmYtMTEwOTE1ZDk3NzA1NjM5MTAzODg3MzIyMTg0Nzc4"
+    data-currency="eur"></div>
+  <script async src="https://cdn.snipcart.com/themes/v3.3.3/default/snipcart.js"></script>
+</body>
+</html>
